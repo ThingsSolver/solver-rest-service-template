@@ -3,7 +3,7 @@
 from fastapi import APIRouter, Request
 
 from app.api.services import Basic
-from app.api.models import CustomerInfo
+from app.api.models import Example
 
 api = APIRouter()
 
@@ -15,7 +15,6 @@ async def health_check(request: Request):
     return message
 
 
-@api.get("/test/{uid}", response_model=CustomerInfo)
+@api.get("/test/{uid}", response_model=Example)
 async def parse_input(uid: str):
-    return Basic().get_customer_info(uid)
-    # return Recommender.get_recommended_items(uid)
+    return Basic().get_data(uid)

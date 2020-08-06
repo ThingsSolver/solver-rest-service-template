@@ -5,6 +5,5 @@ starlette==0.13.2
 uvicorn==0.11.5
 gunicorn==19.9.0
 email-validator==1.1.1
-google-cloud-storage==1.27.0
 requests==2.22.0
 idna==2.8
