@@ -12,15 +12,9 @@ pip install cookiecutter
 ### Run comand inside folder that you want 
 
 ```
-cookiecutter https://github.com/ThingsSolver/solver-service-template/API
+cookiecutter https://github.com/ThingsSolver/solver-service-template
 ```
 
-
-## gRPC
-### Run command inside folder that you want 
-```
-cookiecutter https://github.com/ThingsSolver/solver-service-template/gRPC
-```
 
 
 ### Ideas and bug subitions are welcome
