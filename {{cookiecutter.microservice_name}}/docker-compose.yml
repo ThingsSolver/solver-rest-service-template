@@ -4,7 +4,7 @@ services:
     build:
       context: ""
     restart: always
-    container_name: solver-{{cookiecutter.microservice_name}}-{{cookiecutter.type}}
+    container_name: solver-{{cookiecutter.microservice_name}}
     command: sh ./run_server.sh
     ports:
       - 8080:8080
