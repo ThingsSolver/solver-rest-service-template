@@ -1,4 +1,4 @@
-FROM python:3.7.3
+FROM thingsolver/solver-base:1.0
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
@@ -14,7 +14,8 @@ ADD app /app
 ADD tests /tests
 ADD run_server.sh /
 
-WORKDIR /
+RUN chown -R 1001:1001 /app /tests run_server.sh requirements.txt
 
+USER app
 
 EXPOSE 8080
