@@ -8,10 +8,9 @@ from app.api.models import Example
 api = APIRouter()
 
 
-@api.get("/healthcheck")
+@api.get("/health-check")
 async def health_check(request: Request):
     message = {"HEALTH": "OK"}
-
     return message
 
 
