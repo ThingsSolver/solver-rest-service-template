@@ -1,4 +1,4 @@
-FROM thingsolver/solver-base:1.0
+FROM thingsolver/solver-base:1.1
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
