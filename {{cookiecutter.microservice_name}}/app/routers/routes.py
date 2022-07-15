@@ -1,6 +1,6 @@
 # Endpoints, you can create multiple files if is necessary and include them into main.py
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter
 
 from app.api.services import Basic
 from app.api.models import Example
@@ -9,9 +9,8 @@ api = APIRouter()
 
 
 @api.get("/health-check")
-async def health_check(request: Request):
-    message = {"HEALTH": "OK"}
-    return message
+async def health_check():
+    return {"HEALTH": "OK"}
 
 
 @api.get("/test/{uid}", response_model=Example)
